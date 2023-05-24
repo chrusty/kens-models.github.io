@@ -18,32 +18,36 @@
 
                 {% for collection in site.collections %}
 
-                    <!-- Split into rows of 3 -->
-                    {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+                    {% if collection.builds %}
 
-                    {% if modulo == '0' or forloop.first %}
-                        <div class="row">
-                    {% endif %}
+                        {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
 
-                            <div class="col-lg-3 col-sm-6">
-                                <a class="portfolio-box">
-                                    <img src="{{ collection.image }}" class="img-circle" alt="{{ collection.display_name }}" width="100%">
-                                    <div class="portfolio-box-caption">
-                                        <div class="portfolio-box-caption-content">
-                                            <div class="project-category text-faded">
-                                                {{ collection.display_name }}
+                        {% if modulo == '3' or forloop.first %}
+                            <!-- Split into rows of 3 -->
+                            <div class="row">
+                        {% endif %}
+
+                                <div class="col-lg-4 col-sm-6">
+                                    <a class="portfolio-box">
+                                        <img src="{{ collection.image }}" class="img-circle" alt="{{ collection.display_name }}" width="100%">
+                                        <div class="portfolio-box-caption">
+                                            <div class="portfolio-box-caption-content">
+                                                <div class="project-category text-faded">
+                                                    {{ collection.display_name }}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                                <div class="col-lg-3 col-sm-6">
-                                    <p class="text-muted">{{ collection.display_name }}</p>
+                                    </a>
+                                    <!-- <div class="col-lg-4 col-sm-6">
+                                        <p class="text-muted">{{ collection.display_name }}</p>
+                                    </div> -->
                                 </div>
-                            </div>
 
-                    <!-- New row when we hit 2 -->
-                    {% if modulo == '2' or forloop.last %}
-                        </div>
+                        {% if modulo == '2' or forloop.last %}
+                            <!-- New row when we hit 2 -->
+                            </div>
+                        {% endif %}
+
                     {% endif %}
 
                 {% endfor %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body id="page-top">
+  {% include nav.html %}
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+        <h1 class="major">{{ page.title }}</h1>
+    </div>
+  </section>
+  <section id="content-wrapper" class="bg-secondary">
+    <div class="container">
+        {{ content }}
+    </div>
+  </section>
+
+  {% include scripts.html %}
+</body>
+
+</html>

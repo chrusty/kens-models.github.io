@@ -1,0 +1,45 @@
+title: Ken's Models
+
+collections_dir: collections
+
+collections:
+
+  aircraft:
+    display_name: Aircraft
+    image: /img/collection-aircraft.jpg
+    output: true
+
+  buildings:
+    display_name: Buildings
+    image: /img/collection-buildings.jpg
+    output: true
+
+  carsandtrucks:
+    display_name: Cars and Trucks
+    image: /img/collection-carsandtrucks.jpg
+    output: true
+
+  rail:
+    display_name: Rail
+    image: /img/collection-rail.jpg
+    output: true
+
+  ships:
+    display_name: Ships
+    image: /img/collection-ships.jpg
+    output: true
+
+  tanks:
+    display_name: Tanks
+    image: /img/collection-tanks.jpg
+    output: true
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids: true
+  toc_levels: 1..3

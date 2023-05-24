@@ -6,32 +6,38 @@ collections:
 
   aircraft:
     display_name: Aircraft
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721726619581/
     image: /img/collection-aircraft.jpg
     output: true
 
   buildings:
     display_name: Buildings
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664796542/
     image: /img/collection-buildings.jpg
     output: true
 
   carsandtrucks:
-    display_name: Cars and Trucks
+    display_name: Cars & trucks
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721687938947/
     image: /img/collection-carsandtrucks.jpg
     output: true
 
   rail:
     display_name: Rail
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721732178630/
     image: /img/collection-rail.jpg
     output: true
 
   ships:
     display_name: Ships
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664798767/
     image: /img/collection-ships.jpg
     output: true
 
-  tanks:
-    display_name: Tanks
-    image: /img/collection-tanks.jpg
+  militaryvehicles:
+    display_name: Military vehicles
+    flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721652476868/
+    image: /img/collection-militaryvehicles.jpg
     output: true
 
 excerpt_separator: <!--more-->

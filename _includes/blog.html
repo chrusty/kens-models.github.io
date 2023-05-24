@@ -1,0 +1,45 @@
+<aside class="bg-light">
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Blog</h2>
+                    <hr class="primary">
+                    <p class="text-muted">Project and build updates, tools and techniques</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="container">
+
+                {% for post in site.posts %}
+
+                    <!-- Split into rows of 2 -->
+                    {% capture modulo %}{{ forloop.index0 | mod:2 }}{% endcapture %}
+
+                    {% if modulo == '0' or forloop.first %}
+                        <div class="row">
+                    {% endif %}
+
+                            <div class="col-lg-4 col-md-3 text-center">
+                                <div class="service-box">
+                                    <i class="fa fa-4x {{ post.icon }} wow bounceIn text-primary"></i>
+                                    <h3 class="text-muted">{{ post.title }}</h3>
+                                    <p class="text-muted">{{ post.time }} ({{ post.author }})</p>
+                                </div>
+                                <p class="text-muted">{{ post.excerpt }}</p>
+                            </div>
+
+                    <!-- New row when we hit 1 -->
+                    {% if modulo == '1' or forloop.last %}
+                        </div>
+                    {% endif %}
+        
+                {% endfor %}
+        
+            </div>
+        </div>
+    </section>
+</aside>

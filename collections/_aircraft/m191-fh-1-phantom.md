@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M191 FH-1 Phantom
-id: 72177720308153917
+flickr_set_id: 72177720308153917
 ---
 
 US Navy McDonnell FH-1 Phantom, USS Saipan, 1947, 1/72 scale [Built 2017]

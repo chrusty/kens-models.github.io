@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M219 Genthin Signal Box
-id: 72177720307648138
+flickr_set_id: 72177720307648138
 ---
 
 Genthin Signal Box, Saxony-Anhalt, Germany, HO (1/87) scale {Built 2022]

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M20 GMC Cargo Truck
-id: 72177720307529460
+flickr_set_id: 72177720307529460
 ---
 
 GMC 2 1/2 ton 6X6 Cargo Truck,

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M194 HMS Wild Goose
-id: 72177720308022605
+flickr_set_id: 72177720308022605
 ---
 
 HMS Wild Goose (U45), North Atlantic, 1943, 1/700 scale  [Built 2003 - 2018]

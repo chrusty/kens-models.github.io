@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M182 A11 Matilda-1
-id: 72177720308153636
+flickr_set_id: 72177720308153636
 ---
 
 British A11 Matilda-1, 4th Royal Tank Regiment, BEF, France 1940, 1/35 scale  [Built 2015]

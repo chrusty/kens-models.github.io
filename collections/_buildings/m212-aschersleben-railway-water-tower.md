@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M212 Aschersleben Railway Water Tower
-id: 72177720307725401
+flickr_set_id: 72177720307725401
 ---
 
 Railway Water Tower in Aschersleben, Saxony-Anhalt, Germany, HO (1/87) scale  [Built 2022]

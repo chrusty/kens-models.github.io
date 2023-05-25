@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M218 Bailleul Townhouse
-id: 72177720307674248
+flickr_set_id: 72177720307674248
 ---
 
 Townhouse in Bailleul, Flanders, Northern France, HO (1/87) scale  [Built 2022]

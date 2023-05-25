@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M227 The Queen Anne House
-id: 72177720307521298
+flickr_set_id: 72177720307521298
 ---
 
 “The Queen Anne House” (1994), 716 Steiner St, San Francisco, HO (1/87) scale, [Built 2022]

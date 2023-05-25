@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M109 IJN Subchaser
-id: 72177720307942745
+flickr_set_id: 72177720307942745
 ---
 
 IJN CH 13 Class Subchaser #25, 1942,  1/700 scale  [Built 2003]

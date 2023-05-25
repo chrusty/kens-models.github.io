@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M48 Kubelwagen
-id: 72177720308051872
+flickr_set_id: 72177720308051872
 ---
 
 German Kubelwagen, European Theatre WW2, 1/48 scale

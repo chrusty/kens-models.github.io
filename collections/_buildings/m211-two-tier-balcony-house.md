@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M211 Two-tier Balcony House
-id: 72177720307741984
+flickr_set_id: 72177720307741984
 ---
 
 American Two-Tier Balcony House (Built ~1880-90s), HO (1/87) scale [Model built 2022]

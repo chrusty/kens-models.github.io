@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M230 Oscar II
-id: 72177720307529277
+flickr_set_id: 72177720307529277
 ---
 
 Swedish Coast Defence Ship Oscar II, 1940, 1/700 scale, [Built 2022-23]

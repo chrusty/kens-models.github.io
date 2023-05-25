@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M225 American Barn
-id: 72177720307503321
+flickr_set_id: 72177720307503321
 ---
 
 American Barn Diorama, HO (1/87) scale, [Built 2022]

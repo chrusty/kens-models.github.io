@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M151 LNWR Signal
-id: 72177720307742179
+flickr_set_id: 72177720307742179
 ---
 
 LNWR Home and Distant Signal, NW England, Steam Era, OO (1/76) scale

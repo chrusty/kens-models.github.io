@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M116 HMS Eskimo
-id: 72177720307974032
+flickr_set_id: 72177720307974032
 ---
 
 Royal Navy Destroyer HMS Eskimo, Narvik, April 1940, 1/700 scale  [Built 2004-2006]

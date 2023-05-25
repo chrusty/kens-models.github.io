@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M65 Egyptian SU-100
-id: 72177720308314824
+flickr_set_id: 72177720308314824
 ---
 
 Egyptian SU-100M (Czechoslovakian-built), approx. 1959, 1/35 scale

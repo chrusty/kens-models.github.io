@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M207 The Victorian House
-id: 72177720307430752
+flickr_set_id: 72177720307430752
 ---
 
 “The Victorian House” (1894), 710 Steiner St, San Francisco, HO (1/87) scale [Built 2021]

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M185 M4 Sherman
-id: 72177720308181730
+flickr_set_id: 72177720308181730
 ---
 
 Re-Manufactured Early-Mid Production M4 Sherman, US 2nd Armoured Division, France, August 1944, 1/35 scale, [Built 2016]

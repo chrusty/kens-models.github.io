@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M215 Railway Water Tower In Germany
-id: 72177720307505665
+flickr_set_id: 72177720307505665
 ---
 
 Water Tower in Germany, typical of 1900 – 1920 period, HO (1/87) scale, 

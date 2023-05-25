@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M214 Victorian Villa
-id: 72177720307719159
+flickr_set_id: 72177720307719159
 ---
 
 Single-Peaked Victorian Villa in Gothic Style, HO (1/87) scale [Built 2022]

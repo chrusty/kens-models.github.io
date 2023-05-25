@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M70 F-14 Tomcat
-id: 72177720308408827
+flickr_set_id: 72177720308408827
 ---
 
 F-14 Tomcat, 1/144 scale

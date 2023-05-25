@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M190 Tu-14T Bosun
-id: 72177720308154807
+flickr_set_id: 72177720308154807
 ---
 
 Soviet Tupolev Tu-14T “Bosun” Torpedo Bomber, 1952, 1/72 scale [Built 2017]

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M149 HMVS Cerberus
-id: 72177720308008874
+flickr_set_id: 72177720308008874
 ---
 
 HMVS Cerberus 1877, Port Philip Bay, Australia, 1/350 scale [Built 2010 - 2012]

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M137 Wakatake
-id: 72177720307984374
+flickr_set_id: 72177720307984374
 ---
 
 IJN Destroyer Wakatake, mid 1920s, 1/700 scale  [Built 2006-2008]

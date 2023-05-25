@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M196 Brabham BT50
-id: 72177720308075542
+flickr_set_id: 72177720308075542
 ---
 
 Brabham BT50, Nelson Piquet, Canadian GP, 1982, 1/20 scale 

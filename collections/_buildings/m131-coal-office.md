@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M131 Coal Office
-id: 72177720307744958
+flickr_set_id: 72177720307744958
 ---
 
 Railway Yard Office, England, OO (1/76) scale  [Built 2008]

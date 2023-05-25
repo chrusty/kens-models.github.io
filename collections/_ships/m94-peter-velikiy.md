@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M94 Peter Velikiy
-id: 72177720307759445
+flickr_set_id: 72177720307759445
 ---
 
 Russian Ironclad “Peter Velikiy” approx 1880, 1/700 scale 

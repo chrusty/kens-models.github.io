@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M189 Novgorod
-id: 72177720308038853
+flickr_set_id: 72177720308038853
 ---
 
 Russian Coast Defence Battleship Novgorod, Black Sea early 1880s,  1/350 scale  [Built 2016]

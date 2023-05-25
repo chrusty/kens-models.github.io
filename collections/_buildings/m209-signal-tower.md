@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M209 Signal Tower
-id: 72177720307431540
+flickr_set_id: 72177720307431540
 ---
 
 Semaphore Signal Tower, Central Of Georgia Railroad, approx 1900, HO (1/87) scale [Built 2022]

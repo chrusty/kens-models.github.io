@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M88 Neuschwanstein Castle
-id: 72177720307564708
+flickr_set_id: 72177720307564708
 ---
 
 Neuschwanstein Castle , Bavaria, Germany, 1/220 scale  [Built 1997-98]

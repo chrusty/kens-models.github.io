@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M199 Kenworth K123 COE
-id: 72177720308074197
+flickr_set_id: 72177720308074197
 ---
 
 Kenworth K123 COE ca. 1970, 1/25 scale  [Built 2008-09, 2019]

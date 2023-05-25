@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M113 IJN 25mm AA gun
-id: 72177720307941426
+flickr_set_id: 72177720307941426
 ---
 
 IJN Type 96 25mm AA Gun, 1/35 scale

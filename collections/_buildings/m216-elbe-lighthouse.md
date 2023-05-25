@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M216 Elbe Lighthouse
-id: 72177720307659432
+flickr_set_id: 72177720307659432
 ---
 
 Lighthouse on The Elbe River, HO (1/87) scale  [Built 2022]

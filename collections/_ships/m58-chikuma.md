@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M58 Chikuma
-id: 72177720307769454
+flickr_set_id: 72177720307769454
 ---
 
 IJN Heavy Cruiser Chikuma, approx 1943, 1/700 scale  [Built 1981, 1986-87]

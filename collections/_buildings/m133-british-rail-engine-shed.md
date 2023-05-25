@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M133 British Rail Engine Shed
-id: 72177720307548882
+flickr_set_id: 72177720307548882
 ---
 
 Short Engine Shed, England, ca.1960,

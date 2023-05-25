@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M114 Type XXI U-Boat
-id: 72177720307957823
+flickr_set_id: 72177720307957823
 ---
 
 German Type XXI U-Boat, 1945, 1/350 scale  [Built 2005]

@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M201 Ting Yuen
-id: 72177720307731015
+flickr_set_id: 72177720307731015
 ---
 
 Imperial Chinese Battleship Ting Yuen, 1885, 1/350 scale  [Built 2016, 2019-20]

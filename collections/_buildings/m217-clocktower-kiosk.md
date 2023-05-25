@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M217 Clocktower Kiosk
-id: 72177720307674393
+flickr_set_id: 72177720307674393
 ---
 
 Frankfurt Clocktower Kiosk, Built pre-WW2, HO (1/87) scale  [Built 2022]

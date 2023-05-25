@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M85 Polish WZ 34 Armoured Car
-id: 72177720308513500
+flickr_set_id: 72177720308513500
 ---
 
 Polish WZ-34 Armoured Car, September 1939, 1/35 scale

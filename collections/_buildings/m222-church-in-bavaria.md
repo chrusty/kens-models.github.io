@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M222 Church in Bavaria
-id: 72177720307505430
+flickr_set_id: 72177720307505430
 ---
 
 St. Sebastian Church, Ramsau, Bavaria, Germany, approx. 1970,

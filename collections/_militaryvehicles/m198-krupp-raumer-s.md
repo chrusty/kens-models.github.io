@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M198 Krupp Raumer S
-id: 72177720308064853
+flickr_set_id: 72177720308064853
 ---
 
 Krupp Raumer S, Prototype Heavy Mine-Clearing Vehicle, 1/35 scale  [Built 2018-19]

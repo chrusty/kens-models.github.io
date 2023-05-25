@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M150 SMS Emden
-id: 72177720308026292
+flickr_set_id: 72177720308026292
 ---
 
 SMS Emden, Indian Ocean, 1914, 1/350 scale  [Built 2005 - 2013]

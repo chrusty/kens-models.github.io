@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M77 BRDM-2
-id: 72177720308512247
+flickr_set_id: 72177720308512247
 ---
 
 Romanian BRDM-2 Scout Vehicle, 1/35 scale, [Built 1992-93]

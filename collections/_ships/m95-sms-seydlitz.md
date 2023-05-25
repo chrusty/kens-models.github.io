@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M95 SMS Seydlitz
-id: 72177720307756096
+flickr_set_id: 72177720307756096
 ---
 
 SMS Seydlitz, North Sea, May 1916, 1/700 scale  [Built 1999-2000, upgraded 2001, 2004]

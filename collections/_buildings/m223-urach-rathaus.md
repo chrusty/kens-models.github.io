@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M223 Urach Rathaus
-id: 72177720307569624
+flickr_set_id: 72177720307569624
 ---
 
 Urach Town Hall, Bad Urach, Baden-Wurtemburg, Germany, approx. 2015, approx 1/110 scale  [Built 2022]

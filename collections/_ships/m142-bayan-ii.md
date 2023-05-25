@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M142 Bayan ii
-id: 72177720307997795
+flickr_set_id: 72177720307997795
 ---
 
 Russian Armoured Cruiser Bayan (ii), October 1917, 1/700 scale  [Built 2006-2011]

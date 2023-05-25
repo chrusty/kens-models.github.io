@@ -1,7 +1,7 @@
 ---
 layout: model
 title: M197 1966 Mercury
-id: 72177720308071121
+flickr_set_id: 72177720308071121
 ---
 
 1966 Mercury Parklane Marauder 2-door Hardtop, 1/25 scale

@@ -38,6 +38,9 @@
 
                 <div class="row">
                     <div>
+                        <img src="{{ model.flickr_set_thumbnail_url }}">
+                    </div>
+                    <div>
                         <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><h3 class="text-muted">{{ model.title }}</h3></a>
                         <p class="text-muted">{{ model.excerpt }}</p>
                     </div>

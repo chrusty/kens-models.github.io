@@ -2,6 +2,7 @@
 layout: model
 title: M89 Type VIIC U-Boat
 flickr_set_id: 72177720307755611
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52843344127_60c49e0fdf_m.jpg
 ---
 
 U-Boat Type VIIC, Approx 1941-1942, 1/700 scale [Built 1998, upgraded 1999 - 2003]

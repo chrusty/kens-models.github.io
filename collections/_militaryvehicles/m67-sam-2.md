@@ -2,6 +2,7 @@
 layout: model
 title: M67 SAM-2
 flickr_set_id: 72177720308354750
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52906160935_d4f024734a_m.jpg
 ---
 
 Soviet SAM-2 Missile and Transporter, 1960s, 1/76 scale  [Built 1990]

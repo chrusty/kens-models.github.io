@@ -2,6 +2,7 @@
 layout: model
 title: M46 Soviet T-10
 flickr_set_id: 72177720308048755
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52873950654_7fcd48093b_m.jpg
 ---
 
 Soviet Army T-10 Heavy Tank, Czechoslovakia 1968, 1/35 scale

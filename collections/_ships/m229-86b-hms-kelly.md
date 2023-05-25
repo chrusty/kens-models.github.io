@@ -2,6 +2,7 @@
 layout: model
 title: M229 86B HMS Kelly
 flickr_set_id: 72177720307584145
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52825633967_9f45b21e96_m.jpg
 ---
 
 HMS Kelly 1940, 1/700 scale

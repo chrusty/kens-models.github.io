@@ -7,12 +7,18 @@ import (
 	"github.com/mncaudill/go-flickr"
 )
 
+type CollectionSet struct {
+	ID          string `json:"id"`
+	Title       string `json:"title"`
+	Description string `json:"description"`
+}
+
 type Collection struct {
-	ID          string  `json:"id"`
-	Title       string  `json:"title"`
-	Description string  `json:"description"`
-	IconSmall   string  `json:"iconsmall"`
-	Set         []Album `json:"set"`
+	ID          string          `json:"id"`
+	Title       string          `json:"title"`
+	Description string          `json:"description"`
+	IconSmall   string          `json:"iconsmall"`
+	Set         []CollectionSet `json:"set"`
 }
 
 type Collections struct {

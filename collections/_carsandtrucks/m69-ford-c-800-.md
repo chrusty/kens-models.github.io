@@ -2,6 +2,7 @@
 layout: model
 title: M69 Ford C-800 
 flickr_set_id: 72177720308420184
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52909978382_a54b0c7c5c_m.jpg
 ---
 
 Ford C-800 Stake Truck, 1/25 scale

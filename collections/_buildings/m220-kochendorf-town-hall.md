@@ -2,6 +2,7 @@
 layout: model
 title: M220 Kochendorf Town Hall
 flickr_set_id: 72177720307569934
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52823562771_5ce01d1929_m.jpg
 ---
 
 Kochendorf Town Hall, Bad Friedrichshall, Germany (Built 1597)

@@ -2,6 +2,7 @@
 layout: model
 title: M221 American Farmhouse
 flickr_set_id: 72177720307584537
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52826680988_87458f89e3_m.jpg
 ---
 
 Typical American Farmhouse in the 1950s (Built approx. 1900-1920s),

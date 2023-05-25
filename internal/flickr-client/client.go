@@ -5,8 +5,10 @@ const (
 	argFormatJSON            = "json"
 	argFormatXML             = "xml"
 	argNoJSONCallBack        = "nojsoncallback"
+	argPrimaryPhotoExtras    = "primary_photo_extras"
 	argUserId                = "user_id"
 	methodCollectionsGetTree = "flickr.collections.getTree"
+	methodPhotosetsGetList   = "flickr.photosets.getList"
 )
 
 type Client struct {

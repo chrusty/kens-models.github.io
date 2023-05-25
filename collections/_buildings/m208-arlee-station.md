@@ -2,6 +2,7 @@
 layout: model
 title: M208 Arlee Station
 flickr_set_id: 72177720307524841
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52820723368_f93ef5245e_m.jpg
 ---
 
 Arlee Station, Montana, Northern Pacific Railroad, approx. 1950s, HO (1/87) scale, [Built 2021-22]

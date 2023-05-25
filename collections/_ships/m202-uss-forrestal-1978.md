@@ -2,6 +2,7 @@
 layout: model
 title: M202 USS Forrestal 1978
 flickr_set_id: 72177720307728761
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52841507688_466625dcf7_m.jpg
 ---
 
 USS Forrestal, Mediterranean, mid 1978, 1/720 scale  [Built 2008 - 2020]

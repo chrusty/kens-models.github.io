@@ -2,6 +2,7 @@
 layout: model
 title: M64 Chieftain
 flickr_set_id: 72177720308270936
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52898585654_18558183ff_m.jpg
 ---
 
 British Army Chieftain Mk 2, ca.1969, 1/76 scale  [Built 1971 - 1990]

@@ -2,6 +2,7 @@
 layout: model
 title: M203 Benkei
 flickr_set_id: 72177720307733637
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52840597382_62ec9e6b5e_m.jpg
 ---
 
 Japanese (JGR) Class 7100 “Benkei”, Hokkaido, early 1880s, 1/50 scale

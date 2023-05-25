@@ -2,6 +2,7 @@
 layout: model
 title: M213 Fehmarn Windmill
 flickr_set_id: 72177720307703481
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52838210391_fa13b17bbe_m.jpg
 ---
 
 Windmill at Lemkenhafen, Fehmarn Island, Baltic Coast, Germany. (1787),

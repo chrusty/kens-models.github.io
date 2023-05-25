@@ -2,6 +2,7 @@
 layout: model
 title: M186 Finnish T-50
 flickr_set_id: 72177720308179690
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52888399815_64265b1dd1_m.jpg
 ---
 
 Finnish T-50 Light Tank, Summer 1944, 1/35 scale  [Built 2016]

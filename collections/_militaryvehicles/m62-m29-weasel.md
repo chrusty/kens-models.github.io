@@ -2,6 +2,7 @@
 layout: model
 title: M62 M29 Weasel
 flickr_set_id: 72177720308138653
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52882065156_78f5c1c922_m.jpg
 ---
 
 US Army M-29C Amphibious Weasel, Korea 1951, 1/35 scale [Built 1989-90]

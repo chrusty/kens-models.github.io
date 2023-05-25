@@ -2,6 +2,7 @@
 layout: model
 title: M141 Seehund
 flickr_set_id: 72177720307995885
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52868570406_c2c00d331b_m.jpg
 ---
 
 U-5365, German Seehund Type XXVIIB5 (Type 127) Late, 1945, 1/72 scale  [Built 2010]

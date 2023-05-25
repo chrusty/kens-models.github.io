@@ -2,6 +2,7 @@
 layout: model
 title: M44 M8 Armoured Car
 flickr_set_id: 72177720308048500
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52873172652_778a436746_m.jpg
 ---
 
 US Army M-8 Armoured Car, NW Europe late 1944, 1/35 scale

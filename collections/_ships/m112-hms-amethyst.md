@@ -2,6 +2,7 @@
 layout: model
 title: M112 HMS Amethyst
 flickr_set_id: 72177720307987118
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52866786718_151e10df60_m.jpg
 ---
 
 HMS Amethyst, North Atlantic, 1945,  1/700 scale  [Built 2003-04]

@@ -2,6 +2,7 @@
 layout: model
 title: M183 Sonderfahrgestell
 flickr_set_id: 72177720308220438
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52890580624_d2c633c945_m.jpg
 ---
 
 German Versuchsflakwagen 8.8cm Flak 41 auf Sonderfahrgestell (Pz.Sfl. IVc), trials, Denmark, 1944. 1/72 scale

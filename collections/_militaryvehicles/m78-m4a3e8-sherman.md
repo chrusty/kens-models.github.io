@@ -2,6 +2,7 @@
 layout: model
 title: M78 M4A3E8 Sherman
 flickr_set_id: 72177720308486796
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52919383343_d8237e8296_m.jpg
 ---
 
 US Army M4A3E8 Sherman (76mm HVSS), Korean War, 1/35 scale

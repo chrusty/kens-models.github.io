@@ -2,6 +2,7 @@
 layout: model
 title: M55 HMS Ark Royal
 flickr_set_id: 72177720307614347
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52829129534_3697abd985_m.jpg
 ---
 
 HMS Ark Royal, 1940, 1/600 scale

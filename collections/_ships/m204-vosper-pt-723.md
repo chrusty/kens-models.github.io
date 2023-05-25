@@ -2,6 +2,7 @@
 layout: model
 title: M204 Vosper PT 723
 flickr_set_id: 72177720307674703
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52833463809_09416b0a62_m.jpg
 ---
 
 US Vosper PT 723, Annapolis naval yard, Maryland, approx. 1946, 1/72 scale  [Built 2020-21]

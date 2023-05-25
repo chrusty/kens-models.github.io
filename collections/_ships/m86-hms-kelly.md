@@ -2,6 +2,7 @@
 layout: model
 title: M86 HMS Kelly
 flickr_set_id: 72177720307759372
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52844092769_6567b6fe33_m.jpg
 ---
 
 HMS Kelly, 1940, 1/700 scale  

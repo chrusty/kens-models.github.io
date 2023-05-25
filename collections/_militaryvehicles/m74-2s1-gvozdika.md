@@ -2,6 +2,7 @@
 layout: model
 title: M74 2S1 Gvozdika
 flickr_set_id: 72177720308528708
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52921374250_09d7b911cb_m.jpg
 ---
 
 Polish Army 2S1 Gvozdika SP 122 mm gun - approx. 1980s, 1/76 scale

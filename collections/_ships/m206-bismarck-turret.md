@@ -2,6 +2,7 @@
 layout: model
 title: M206 Bismarck turret
 flickr_set_id: 72177720307633732
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52831101465_270c2e10ed_m.jpg
 ---
 
 Bismarck Turret “Bruno”, 26-27 May 1941, North Atlantic, 1/72 scale  

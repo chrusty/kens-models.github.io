@@ -2,6 +2,7 @@
 layout: model
 title: M83 Sakura
 flickr_set_id: 72177720307771109
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52843301932_e3aaa17a77_m.jpg
 ---
 
 IJN Destroyer Sakura, 1945, 1/700 scale  [Built 1994-95]

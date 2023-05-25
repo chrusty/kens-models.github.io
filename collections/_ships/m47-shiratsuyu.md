@@ -2,6 +2,7 @@
 layout: model
 title: M47 Shiratsuyu
 flickr_set_id: 72177720307448628
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52810685762_f332022740_m.jpg
 ---
 
 Imperial Japanese Navy  Destroyer Shiratsuyu, approx. 1942, 1/700 scale

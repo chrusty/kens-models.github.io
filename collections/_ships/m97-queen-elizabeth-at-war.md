@@ -2,6 +2,7 @@
 layout: model
 title: M97 Queen Elizabeth at War
 flickr_set_id: 72177720307774868
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52844442318_5a499f941b_m.jpg
 ---
 
 HM Troopship Queen Elizabeth, Sydney Harbour, March 1941, 1/600 scale

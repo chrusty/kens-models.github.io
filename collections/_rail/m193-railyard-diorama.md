@@ -2,6 +2,7 @@
 layout: model
 title: M193 Railyard Diorama
 flickr_set_id: 72177720308151912
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52885254614_368aa68ca6_m.jpg
 ---
 
 “End of the Line for Steam Power - Diesel Moving In”

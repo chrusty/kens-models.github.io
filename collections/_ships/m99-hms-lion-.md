@@ -2,6 +2,7 @@
 layout: model
 title: M99 HMS Lion 
 flickr_set_id: 72177720307780333
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52844994913_2dd7bd14aa_m.jpg
 ---
 
 HMS Lion, North Sea, May 1916, 1/900 scale  [Built 2001]

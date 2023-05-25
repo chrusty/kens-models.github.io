@@ -2,6 +2,7 @@
 layout: model
 title: M108 MTB Diorama
 flickr_set_id: 72177720307765180
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52844966005_f8df3436e3_m.jpg
 ---
 
 MTB 66 Returns to Base, RN  70-foot Vosper MTB, English Channel, Summer 1942, 1/700 scale  [Built 1999 &amp;amp; 2003]

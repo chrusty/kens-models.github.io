@@ -2,6 +2,7 @@
 layout: model
 title: M71 F-18 Hornet
 flickr_set_id: 72177720308441219
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52913005149_6b7df68ab0_m.jpg
 ---
 
 F- 18 Hornet Demonstrator, 1/144 scale

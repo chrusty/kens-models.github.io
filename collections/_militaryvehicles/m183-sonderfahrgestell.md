@@ -1,0 +1,12 @@
+---
+layout: model
+title: M183 Sonderfahrgestell
+id: 72177720308220438
+---
+
+German Versuchsflakwagen 8.8cm Flak 41 auf Sonderfahrgestell (Pz.Sfl. IVc), trials, Denmark, 1944. 1/72 scale
+[Built 2015]
+
+I built this experimental vehicle from a Cromwell Models resin kit which also included parts for an anti-tank version. The kit was nicely detailed but required a lot of cleanup to fill air bubble pin-holes and remove flash and mould seams. There were no instructions or decals.
+
+

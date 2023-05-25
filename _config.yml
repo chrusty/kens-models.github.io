@@ -11,8 +11,12 @@ collections:
     display_name: Aircraft
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721726619581/
     image: /img/collection-aircraft.jpg
+    label: aircraft
     output: true
     position: 3
+    scales:
+      - "1/72"
+      - "1/144"
     url: /aircraft.html
 
   buildings:
@@ -20,8 +24,11 @@ collections:
     display_name: Buildings
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664796542/
     image: /img/collection-buildings.jpg
+    label: buildings
     output: true
     position: 6
+    scales:
+      - "1/87"
     url: /buildings.html
 
   carsandtrucks:
@@ -29,8 +36,12 @@ collections:
     display_name: Cars & trucks
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721687938947/
     image: /img/collection-carsandtrucks.jpg
+    label: carsandtrucks
     output: true
     position: 4
+    scales:
+      - "1/24"
+      - "1/25"
     url: /cars-and-trucks.html
 
   rail:
@@ -38,8 +49,14 @@ collections:
     display_name: Rail
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721732178630/
     image: /img/collection-rail.jpg
+    label: rail
     output: true
     position: 5
+    scales:
+      - "1/600"
+      - "1/700"
+      - "1/350"
+      - "1/72"
     url: /rail.html
 
   ships:
@@ -47,8 +64,14 @@ collections:
     display_name: Ships
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664798767/
     image: /img/collection-ships.jpg
+    label: ships
     output: true
     position: 1
+    scales:
+      - "1/600"
+      - "1/700"
+      - "1/350"
+      - "1/72"
     url: /ships.html
 
   militaryvehicles:
@@ -56,8 +79,12 @@ collections:
     display_name: Military vehicles
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721652476868/
     image: /img/collection-militaryvehicles.jpg
+    label: militaryvehicles
     output: true
     position: 2
+    scales:
+      - "1/35"
+      - "1/72"
     url: /military-vehicles.html
 
 excerpt_separator: <!--more-->

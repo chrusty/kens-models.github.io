@@ -3,6 +3,8 @@
 
 {% include head.html %}
 
+{% assign collection = site.collections | where:"label", page.label  | first %}
+
 <body id="page-top">
 
   {% include nav.html %}
@@ -10,12 +12,56 @@
 
   <section class="bg-primary" id="about">
     <div class="container">
-        <h1 class="major">{{ page.title }}</h1>
+        <h1 class="major">{{ collection.display_name }}</h1>
+        <hr class="primary">
+        <p>Scales:
+            <ul>
+            {% for scale in collection.scales %}
+                <li>{{scale}}</li>
+            {% endfor %}
+            </ul>
+        </p>
+        <a href="{{ collection.flickr_url }}"><img class="fa-brands fa-flickr text-primary"></i></a>
     </div>
   </section>
+
+  
   <section id="content-wrapper" class="bg-secondary">
     <div class="container">
-        {{ content }}
+
+        {% for model in site[page.label] %}
+
+            {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+
+            {% if modulo == '3' or forloop.first %}
+                <!-- Split into rows of 3 -->
+                <div class="row">
+            {% endif %}
+
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box">
+                            <img src="{{ collection.image }}" class="img-circle" alt="{{ collection.display_name }}" width="100%">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        {{ model.content | markdownify }}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- <div class="col-lg-4 col-sm-6">
+                            <p class="text-muted">{{ collection.display_name }}</p>
+                        </div> -->
+                    </div>
+
+            {% if modulo == '2' or forloop.last %}
+                <!-- New row when we hit 2 -->
+                </div>
+            {% endif %}
+
+        {% endfor %}
+
+
     </div>
   </section>
 

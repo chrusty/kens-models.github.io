@@ -1,0 +1,12 @@
+---
+layout: model
+title: M70 F-14 Tomcat
+id: 72177720308408827
+---
+
+F-14 Tomcat, 1/144 scale
+[Built 1983 - 1991]
+
+During the 1980s, when my time to model was quite limited, I started a number of small projects in the belief that I could build them quickly. This Otaki Tomcat was one such project. Unfortunately, it did not get built quickly but instead joined a growing backlog of unfinished projects. I finally knocked it off in 1991. The kit was quite nice, considering it was tooled in 1974. I cut the cockpit open and added 2 seats and also opened out the intakes and exhausts. In 2014, I upgraded it by running pencil lead in the panel lines.
+
+

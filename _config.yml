@@ -1,5 +1,7 @@
 title: Ken's Models
 
+flickr_usernam: kens_models
+
 collections_dir: collections
 
 collections:
@@ -11,6 +13,7 @@ collections:
     image: /img/collection-aircraft.jpg
     output: true
     position: 3
+    url: /aircraft.html
 
   buildings:
     builds: true
@@ -19,6 +22,7 @@ collections:
     image: /img/collection-buildings.jpg
     output: true
     position: 6
+    url: /buildings.html
 
   carsandtrucks:
     builds: true
@@ -27,6 +31,7 @@ collections:
     image: /img/collection-carsandtrucks.jpg
     output: true
     position: 4
+    url: /cars-and-trucks.html
 
   rail:
     builds: true
@@ -35,6 +40,7 @@ collections:
     image: /img/collection-rail.jpg
     output: true
     position: 5
+    url: /rail.html
 
   ships:
     builds: true
@@ -43,6 +49,7 @@ collections:
     image: /img/collection-ships.jpg
     output: true
     position: 1
+    url: /ships.html
 
   militaryvehicles:
     builds: true
@@ -51,6 +58,7 @@ collections:
     image: /img/collection-militaryvehicles.jpg
     output: true
     position: 2
+    url: /military-vehicles.html
 
 excerpt_separator: <!--more-->
 

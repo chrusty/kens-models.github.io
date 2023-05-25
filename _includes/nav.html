@@ -15,6 +15,13 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="page-scroll" href="/#builds">Builds</a></li>
+                {% assign collections = site.collections | sort: 'position' | where: 'builds', true %}
+
+                {% for collection in collections %}
+                <li><a class="page-scroll" href="{{ collection.url }}">{{ collection.display_name }}</a></li>
+
+
+                {% endfor %}
                 <li><a class="page-scroll" href="/#blog">Blog</a></li>
             </ul>
         </div>

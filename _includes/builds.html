@@ -16,38 +16,37 @@
         <div class="container-fluid">
             <div class="row no-gutter">
 
-                {% for collection in site.collections %}
+                <!-- List all of the collections which are tagged as "builds", ordered by their position attribute -->
+                {% assign collections = site.collections | sort: 'position' | where: 'builds', true %}
 
-                    {% if collection.builds %}
+                {% for collection in collections %}
 
-                        {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+                    {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
 
-                        {% if modulo == '3' or forloop.first %}
-                            <!-- Split into rows of 3 -->
-                            <div class="row">
-                        {% endif %}
+                    {% if modulo == '3' or forloop.first %}
+                        <!-- Split into rows of 3 -->
+                        <div class="row">
+                    {% endif %}
 
-                                <div class="col-lg-4 col-sm-6">
-                                    <a class="portfolio-box">
-                                        <img src="{{ collection.image }}" class="img-circle" alt="{{ collection.display_name }}" width="100%">
-                                        <div class="portfolio-box-caption">
-                                            <div class="portfolio-box-caption-content">
-                                                <div class="project-category text-faded">
-                                                    {{ collection.display_name }}
-                                                </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <a class="portfolio-box">
+                                    <img src="{{ collection.image }}" class="img-circle" alt="{{ collection.display_name }}" width="100%">
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-category text-faded">
+                                                {{ collection.display_name }}
                                             </div>
                                         </div>
-                                    </a>
-                                    <!-- <div class="col-lg-4 col-sm-6">
-                                        <p class="text-muted">{{ collection.display_name }}</p>
-                                    </div> -->
-                                </div>
-
-                        {% if modulo == '2' or forloop.last %}
-                            <!-- New row when we hit 2 -->
+                                    </div>
+                                </a>
+                                <!-- <div class="col-lg-4 col-sm-6">
+                                    <p class="text-muted">{{ collection.display_name }}</p>
+                                </div> -->
                             </div>
-                        {% endif %}
 
+                    {% if modulo == '2' or forloop.last %}
+                        <!-- New row when we hit 2 -->
+                        </div>
                     {% endif %}
 
                 {% endfor %}

@@ -10,6 +10,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721726619581/
     image: /img/collection-aircraft.jpg
     output: true
+    position: 3
 
   buildings:
     builds: true
@@ -17,6 +18,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664796542/
     image: /img/collection-buildings.jpg
     output: true
+    position: 6
 
   carsandtrucks:
     builds: true
@@ -24,6 +26,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721687938947/
     image: /img/collection-carsandtrucks.jpg
     output: true
+    position: 4
 
   rail:
     builds: true
@@ -31,6 +34,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721732178630/
     image: /img/collection-rail.jpg
     output: true
+    position: 5
 
   ships:
     builds: true
@@ -38,6 +42,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664798767/
     image: /img/collection-ships.jpg
     output: true
+    position: 1
 
   militaryvehicles:
     builds: true
@@ -45,6 +50,7 @@ collections:
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721652476868/
     image: /img/collection-militaryvehicles.jpg
     output: true
+    position: 2
 
 excerpt_separator: <!--more-->
 

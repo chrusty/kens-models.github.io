@@ -1133,7 +1133,7 @@ img {
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
 }
-.img-circle {
+.img-rounded {
   border-radius: 10%;
 }
 hr {

@@ -2,7 +2,7 @@
 layout: model
 title: M210 Miners Cottage
 flickr_set_id: 72177720307562624
-flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52822183187_d14094a7d0_m.jpg
+flickr_set_thumbnail_url: https://live.staticflickr.com/65535/52822939719_f05442fce4_m.jpg
 ---
 
 Restored Miner’s Cottage (approx. 1870s), typical of cottages in Bendigo, Australia, HO (1/87) scale [Built 2022]

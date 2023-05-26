@@ -36,15 +36,31 @@
 
         {% for model in site[page.label] %}
 
-                <div class="row">
-                    <div>
-                        <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><img src="{{ model.flickr_set_thumbnail_url }}"></a>
-                    </div>
-                    <div>
-                        <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><h3 class="text-muted">{{ model.title }}</h3></a>
-                        <p class="text-muted">{{ model.excerpt }}</p>
-                    </div>
+            {% assign remainder = forloop.index | modulo: 2 %}
+
+            <div class="row">
+
+            {% if remainder == 0 %}
+                <div class="col-md-3">
+                    <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><img src="{{ model.flickr_set_thumbnail_url }}"></a>
                 </div>
+                <div class="col-md-8 text-left">
+                    <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><h3 class="text-muted">{{ model.title }}</h3></a>
+                    <p class="text-muted">{{ model.excerpt }}</p>
+                </div>
+            {% else %}
+                <div class="col-md-8 text-left">
+                    <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><h3 class="text-muted">{{ model.title }}</h3></a>
+                    <p class="text-muted">{{ model.excerpt }}</p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.flickr.com/photos/{{ site.flickr_username }}/sets/{{ model.flickr_set_id }}/"><img src="{{ model.flickr_set_thumbnail_url }}"></a>
+                </div>
+            {% endif %}
+
+            </div>
+
+            <hr>
 
         {% endfor %}
 

@@ -21,9 +21,9 @@
 
                 {% for collection in collections %}
 
-                    {% capture modulo %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+                    {% assign remainder = forloop.index | modulo: 3 %}
 
-                    {% if modulo == '3' or forloop.first %}
+                    {% if remainder == 1 or forloop.first %}
                         <!-- Split into rows of 3 -->
                         <div class="row">
                     {% endif %}
@@ -41,7 +41,7 @@
                                 </a>
                             </div>
 
-                    {% if modulo == '2' or forloop.last %}
+                    {% if remainder == 0 or forloop.last %}
                         <!-- New row when we hit 2 -->
                         </div>
                     {% endif %}

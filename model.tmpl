@@ -1,10 +1,15 @@
 ---
 layout: model
-title: {{ .Title }}
-flickr_set_id: {{ .FlickrSetID }}
-flickr_set_thumbnail_url: {{ .ThumbnailURL }}
+build_hours: "{{ .BuildHours }}"
+build_period: "{{ .BuildPeriod }}"
+category: "{{ .Category }}"
+completion_date: "{{ .CompletionDate }}"
+flickr_set_id: "{{ .FlickrSetID }}"
+flickr_set_thumbnail_url: "{{ .ThumbnailURL }}"
+model_id: "{{ .ID }}"
+scale: "{{ .Scale }}"
+summary: "{{ .Summary }}"
+title: "{{ .Name }}"
 ---
 
-{{ .Description }}
-
-<!--more-->
+{{ .Comments }}

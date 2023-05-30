@@ -68,7 +68,7 @@ func main() {
 	for _, entry := range values.Entries {
 
 		// Turn it into an actual model:
-		model := models.Model{
+		model := &models.Model{
 			BuildHours:     entry[headerBuildHours],
 			BuildPeriod:    entry[headerBuildPeriod],
 			Category:       entry[headerCategory],
@@ -92,12 +92,6 @@ func main() {
 		flatCategory := strings.ReplaceAll(strings.ToLower(model.Category), " ", "")
 		jekyllCollectionPath := fmt.Sprintf("%s%s", jekyllCollectionPathPrefix, flatCategory)
 
-		log.Printf("   * Model (\"%s\") [ID=%s, Publish=%v] => %s", model.Name, model.ID, model.Publish(), model.FileName(jekyllCollectionPath, "md"))
-
-		if !model.Publish() {
-			continue
-		}
-
 		// Render the model template:
 		tmpl, err := template.New(modelTemplateFile).ParseFiles(modelTemplateFile)
 		if err != nil {
@@ -117,5 +111,8 @@ func main() {
 
 		// Close the file:
 		modelFile.Close()
+
+		// Log:
+		log.Printf("   * Model (\"%s\") [ID=%s, Publish=%v] => %s", model.Name, model.ID, model.Publish(), model.FileName(jekyllCollectionPath, "md"))
 	}
 }

@@ -7,6 +7,7 @@ import (
 	"strings"
 	"text/template"
 
+	flickrclient "github.com/chrusty/kens-models.github.io/internal/flickr-client"
 	"github.com/chrusty/kens-models.github.io/internal/models"
 	sheetsdata "github.com/chrusty/kens-models.github.io/internal/sheets-data"
 )
@@ -53,6 +54,16 @@ func main() {
 		log.Fatalf("Unable to create map from sheets data: %s", err.Error())
 	}
 
+	// Make a new Flickr client:
+	flickrClient := flickrclient.New(flickrAPIKey).WithSecret(flickrSecret).WithUserId(flickrUserID)
+
+	// Retrieve photosets:
+	photosetsResponse, err := flickrClient.PhotosetsGetList()
+	if err != nil {
+		log.Fatalf("Error retrieving photosets: %s", err.Error())
+	}
+	log.Printf("Found %d photosets:", len(photosetsResponse.Photosets.Photoset))
+
 	// Go through each row entry we found:
 	for _, entry := range values.Entries {
 
@@ -68,14 +79,24 @@ func main() {
 			Name:           entry[headerName],
 			Scale:          entry[headerScale],
 			Summary:        entry[headerSummary],
-			// ThumbnailURL: entry[headerCategory],
+		}
+
+		// See if we have any photo URLs in the photosets we found:
+		for _, foundPhotoset := range photosetsResponse.Photosets.Photoset {
+			if foundPhotoset.ID == model.FlickrSetID {
+				model.ThumbnailURL = foundPhotoset.PrimaryPhotoExtras.UrlSmall
+			}
 		}
 
 		// Figure out the paths:
 		flatCategory := strings.ReplaceAll(strings.ToLower(model.Category), " ", "")
 		jekyllCollectionPath := fmt.Sprintf("%s%s", jekyllCollectionPathPrefix, flatCategory)
 
-		log.Printf("   * Model (\"%s\") [ID=%s, Thumbnail=%v] => %s", model.Name, model.ID, (model.FlickrSetID != ""), model.FileName(jekyllCollectionPath, "md"))
+		log.Printf("   * Model (\"%s\") [ID=%s, Publish=%v] => %s", model.Name, model.ID, model.Publish(), model.FileName(jekyllCollectionPath, "md"))
+
+		if !model.Publish() {
+			continue
+		}
 
 		// Render the model template:
 		tmpl, err := template.New(modelTemplateFile).ParseFiles(modelTemplateFile)

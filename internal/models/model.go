@@ -23,3 +23,7 @@ func (m *Model) FileName(prefix, extension string) string {
 	kebabName := strings.ReplaceAll(strings.ToLower(m.ID), " ", "-")
 	return fmt.Sprintf("%s/%s.%s", prefix, kebabName, extension)
 }
+
+func (m *Model) Publish() bool {
+	return (len(m.FlickrSetID) > 0 && len(m.Summary)+len(m.Comments) > 0)
+}

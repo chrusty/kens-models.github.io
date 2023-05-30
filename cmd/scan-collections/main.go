@@ -8,6 +8,8 @@ import (
 	"strings"
 
 	flickrclient "github.com/chrusty/kens-models.github.io/internal/flickr-client"
+	"github.com/chrusty/kens-models.github.io/internal/models"
+	sheetsdata "github.com/chrusty/kens-models.github.io/internal/sheets-data"
 )
 
 const (
@@ -16,32 +18,44 @@ const (
 )
 
 var (
-	flickrAPIKey = os.Getenv("FLICKR_APIKEY")
-	flickrSecret = os.Getenv("FLICKR_SECRET")
-	flickrUserID = os.Getenv("FLICKR_USERID")
+	flickrAPIKey        = os.Getenv("FLICKR_APIKEY")
+	flickrSecret        = os.Getenv("FLICKR_SECRET")
+	flickrUserID        = os.Getenv("FLICKR_USERID")
+	googleAuthKey       = os.Getenv("GOOGLE_AUTH_KEY")
+	googleSpreadsheetId = os.Getenv("GOOGLE_SHEET_ID")
 )
-
-type model struct {
-	FlickrSetID  string
-	Description  string
-	Title        string
-	ThumbnailURL string
-}
 
 func main() {
 
+	// Make a new Google sheets client:
+	googleSheetsClient, err := sheetsdata.New(googleSpreadsheetId).WithAPIKey(googleAuthKey)
+	if err != nil {
+		log.Fatalf("Unable to prepare a Google sheets client: %s", err.Error())
+	}
+
+	// Retrieve values from the Google sheet:
+	values, err := googleSheetsClient.ValuesGet("1:1000", true)
+	if err != nil {
+		log.Fatalf("Unable to retrieve Google sheets values: %s", err.Error())
+	}
+
+	// Build a map of the values so we can search them (by "Flickr Photoset ID"):
+	if err := values.CreateMap("Flickr Photoset ID"); err != nil {
+		log.Fatalf("Unable to create map from sheets data: %s", err.Error())
+	}
+
 	// Make a new Flickr client:
-	client := flickrclient.New(flickrAPIKey).WithSecret(flickrSecret).WithUserId(flickrUserID)
+	flickrClient := flickrclient.New(flickrAPIKey).WithSecret(flickrSecret).WithUserId(flickrUserID)
 
 	// Retrieve collections:
-	collectionsResponse, err := client.CollectionsGetTree()
+	collectionsResponse, err := flickrClient.CollectionsGetTree()
 	if err != nil {
 		log.Fatalf("Error retrieving collections: %s", err.Error())
 	}
 	log.Printf("Found %d collections:", len(collectionsResponse.Collections.Collection))
 
 	// Retrieve photosets:
-	photosetsResponse, err := client.PhotosetsGetList()
+	photosetsResponse, err := flickrClient.PhotosetsGetList()
 	if err != nil {
 		log.Fatalf("Error retrieving photosets: %s", err.Error())
 	}
@@ -58,10 +72,10 @@ func main() {
 			modelFilePath := fmt.Sprintf("%s/%s.md", jekyllCollectionPath, modelFileName)
 
 			// Put together a model (which we can run the template on):
-			model := model{
-				Description: set.Description,
+			model := models.Model{
+				Comments:    set.Description,
 				FlickrSetID: set.ID,
-				Title:       set.Title,
+				Name:        set.Title,
 			}
 
 			// See if we have any photo URLs in the photosets we found:

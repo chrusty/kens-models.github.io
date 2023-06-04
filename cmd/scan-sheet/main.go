@@ -113,6 +113,6 @@ func main() {
 		modelFile.Close()
 
 		// Log:
-		log.Printf("   * Model (\"%s\") [ID=%s, Publish=%v] => %s", model.Name, model.ID, model.Publish(), model.FileName(jekyllCollectionPath, "md"))
+		log.Printf(" * Model (\"%s\") [ID=%s, Publish=%v] => %s", model.Name, model.ID, model.Publish(), model.FileName(jekyllCollectionPath, "md"))
 	}
 }

@@ -1,11 +1,8 @@
 title: Ken's Models
-
 flickr_username: kens_models
-
 collections_dir: collections
 
 collections:
-
   aircraft:
     background_image: /img/background-aircraft.jpg
     builds: true
@@ -94,9 +91,10 @@ collections:
     url: /military-vehicles.html
 
 excerpt_separator: <!--more-->
-
+exclude:
+  - cmd
+  - internal
 markdown: kramdown
-
 kramdown:
   syntax_highlighter: rouge
   input: GFM

@@ -7,6 +7,7 @@ collections_dir: collections
 collections:
 
   aircraft:
+    background_image: /img/background-aircraft.jpg
     builds: true
     display_name: Aircraft
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721726619581/
@@ -20,6 +21,7 @@ collections:
     url: /aircraft.html
 
   buildings:
+    background_image: /img/background-buildings.jpg
     builds: true
     display_name: Buildings
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664796542/
@@ -32,6 +34,7 @@ collections:
     url: /buildings.html
 
   carsandtrucks:
+    background_image: /img/background-carsandtrucks.jpg
     builds: true
     display_name: Cars & trucks
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721687938947/
@@ -45,6 +48,7 @@ collections:
     url: /cars-and-trucks.html
 
   rail:
+    background_image: /img/background-rail.jpg
     builds: true
     display_name: Rail
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721732178630/
@@ -60,6 +64,7 @@ collections:
     url: /rail.html
 
   ships:
+    background_image: /img/background-ships.jpg
     builds: true
     display_name: Ships
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721664798767/
@@ -75,6 +80,7 @@ collections:
     url: /ships.html
 
   militaryvehicles:
+    background_image: /img/background-militaryvehicles.jpg
     builds: true
     display_name: Military vehicles
     flickr_url: https://www.flickr.com/photos/kens_models/collections/72157721652476868/

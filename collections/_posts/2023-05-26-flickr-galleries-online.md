@@ -3,16 +3,9 @@ layout: post
 title:  "Flickr galleries online"
 author: Chris
 time: "Wednesday 24th of May 2023"
-icon: fa-gears
+icon: fa-flickr
 ---
 
-We're currently working to bring the site online. Please bear with us!
+Ken has been spending his efforts on taking photos of models, uploading them to Flickr, and organising them into galleries underneath the main categories you'll find here. The site is arranged as a guide to the categorised Flickr galleries for each model.
 
-<!--more-->
-
-- [x] Running on github.io
-- [x] Basic Jekyll layout
-- [x] Collections for build categories
-    - [ ] Collection items for each build
-    - [ ] Links to Flickr galleries
-- [ ] Blog section
+[See Ken's Models on Flickr here](https://www.flickr.com/photos/kens_models/)

@@ -13,9 +13,9 @@ type BuildCollection struct {
 }
 
 func (m *BuildCollection) FileName(extension string) string {
-	return fmt.Sprintf("%s.%s", m.Label(), extension)
+	return fmt.Sprintf("%s.%s", strings.ReplaceAll(strings.ToLower(m.Title), " ", "-"), extension)
 }
 
 func (m *BuildCollection) Label() string {
-	return strings.ReplaceAll(strings.ToLower(m.Title), " ", "-")
+	return strings.ReplaceAll(strings.ToLower(m.Title), " ", "")
 }

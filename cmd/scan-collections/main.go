@@ -14,7 +14,8 @@ import (
 
 const (
 	jekyllCollectionPathPrefix = "./collections/_"
-	modelTemplateFile          = "model.tmpl"
+	templateFileName           = "model.tmpl"
+	templatePath               = "./internal/templates/"
 )
 
 var (
@@ -72,7 +73,7 @@ func main() {
 			modelFilePath := fmt.Sprintf("%s/%s.md", jekyllCollectionPath, modelFileName)
 
 			// Put together a model (which we can run the template on):
-			model := models.Model{
+			model := &models.Model{
 				Comments:    set.Description,
 				FlickrSetID: set.ID,
 				Name:        set.Title,
@@ -88,7 +89,7 @@ func main() {
 			log.Printf("   * Model (\"%s\") [ID=%s, Thumbnail=%v] => %s", set.Title, set.ID, (model.ThumbnailURL != ""), modelFilePath)
 
 			// Render the model template:
-			tmpl, err := template.New(modelTemplateFile).ParseFiles(modelTemplateFile)
+			tmpl, err := template.New(templateFileName).ParseFiles(fmt.Sprintf("%s%s", templatePath, templateFileName))
 			if err != nil {
 				log.Fatalf("Error parsing model template: %s", err.Error())
 			}
@@ -96,7 +97,7 @@ func main() {
 			// Make a file for the album:
 			modelFile, err := os.Create(modelFilePath)
 			if err != nil {
-				log.Fatalf("Error opening modle file: %s", err.Error())
+				log.Fatalf("Error opening model file: %s", err.Error())
 			}
 
 			// Execute the template:

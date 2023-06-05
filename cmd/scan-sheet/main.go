@@ -24,7 +24,8 @@ const (
 	headerScale                = "Scale"
 	headerSummary              = "Subject Full Title"
 	jekyllCollectionPathPrefix = "./collections/_"
-	modelTemplateFile          = "model.tmpl"
+	templateFileName           = "model.tmpl"
+	templatePath               = "./internal/templates/"
 )
 
 var (
@@ -93,7 +94,7 @@ func main() {
 		jekyllCollectionPath := fmt.Sprintf("%s%s", jekyllCollectionPathPrefix, flatCategory)
 
 		// Render the model template:
-		tmpl, err := template.New(modelTemplateFile).ParseFiles(modelTemplateFile)
+		tmpl, err := template.New(templateFileName).ParseFiles(fmt.Sprintf("%s%s", templatePath, templateFileName))
 		if err != nil {
 			log.Fatalf("Error parsing model template: %s", err.Error())
 		}

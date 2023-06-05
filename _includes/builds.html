@@ -28,7 +28,7 @@
                         <div class="row">
                     {% endif %}
 
-                            <div class="col-lg-4 col-sm-6">
+                            <div class="col-lg-4 col-sm-6 text-center">
                                 <a class="portfolio-box" href="{{ collection.url }}">
                                     <img src="{{ collection.image }}" class="img-rounded" alt="{{ collection.display_name }}" width="100%">
                                     <div class="portfolio-box-caption">
@@ -39,6 +39,7 @@
                                         </div>
                                     </div>
                                 </a>
+                                <p class="text-primary">{{ collection.display_name }}</p>
                             </div>
 
                     {% if remainder == 0 or forloop.last %}

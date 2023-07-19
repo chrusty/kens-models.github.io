@@ -3,7 +3,7 @@ layout: post
 title:  "The entire model catalogue is now online"
 author: Ken
 time: "Thursday 6th of July 2023"
-icon: fa-gears
+icon: fa-anchor
 ---
 
 All of my extant completed models are now accessible on the site, with photos and descriptive texts.

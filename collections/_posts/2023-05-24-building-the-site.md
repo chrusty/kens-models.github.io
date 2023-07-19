@@ -3,7 +3,7 @@ layout: post
 title:  "Building the site"
 author: Chris
 time: "Wednesday 24th of May 2023"
-icon: fa-gears
+icon: fa-hammer
 ---
 
 We're currently working to bring the site online. Please bear with us!

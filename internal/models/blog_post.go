@@ -4,15 +4,17 @@ import (
 	"fmt"
 	"strings"
 	"time"
+
+	"gopkg.in/yaml.v3"
 )
 
 const blogTimeStampFormat = "Monday 02 of January 2006"
 
 type BlogPost struct {
-	Author  string
+	Author  string `yaml:"author"`
 	Content string
-	Icon    string
-	Time    time.Time
+	Icon    string    `yaml:"icon"`
+	Time    time.Time `yaml:"time"`
 	Title   string
 }
 
@@ -23,5 +25,9 @@ func (b *BlogPost) FileName(prefix, extension string) string {
 }
 
 func (b *BlogPost) TimeStamp() string {
-	return b.Time.Format(blogTimeStampFormat)
+	return b.Time.UTC().Format(blogTimeStampFormat)
+}
+
+func (b *BlogPost) ParseDescription(description string) error {
+	return yaml.Unmarshal([]byte(description), b)
 }

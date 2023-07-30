@@ -23,6 +23,8 @@ Plans for the future
 
 Ken loves spreadsheets, so we could control the metadata using Google sheets and its public API. The scraper could use this spreadsheet as the primary source of information, allowing us to convey as much metadata as we need for each model. The sheet would need the ID for each Flickr photoset (so we can discover the thumbnail URLs dynamically).
 
+The blog section could potentially be managed by a shared google folder full of documents. An importer could list docs in this folder, convert each one to markdown, and write a Jekyll post file using a Go template.
+
 
 Local development
 -----------------

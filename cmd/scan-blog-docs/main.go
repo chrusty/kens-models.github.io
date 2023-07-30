@@ -14,9 +14,11 @@ import (
 )
 
 const (
-	jekyllPostsPath  = "./collections/_posts"
-	templateFileName = "blog.tmpl"
-	templatePath     = "./internal/templates/"
+	defaultBlogAuthor = "Ken"
+	defaultBlogIcon   = "fa-anchor"
+	jekyllPostsPath   = "./collections/_posts"
+	templateFileName  = "blog.tmpl"
+	templatePath      = "./internal/templates/"
 )
 
 var (
@@ -38,12 +40,8 @@ func main() {
 		log.Fatalf("Unable to prepare a Google Docs client: %s", err.Error())
 	}
 
-	if docsClient == nil {
-		log.Fatalf("Docs client is nil")
-	}
-
 	// Retrieve a list of docs in the folder:
-	driveResponse, err := driveClient.Service().Children.List(googleFolderId).MaxResults(1000).Do()
+	driveResponse, err := driveClient.Service().Files.List().Q("mimeType='application/vnd.google-apps.document'").MaxResults(1000).Do()
 	if err != nil {
 		log.Fatalf("Unable to list docs: %s", err.Error())
 	}
@@ -65,11 +63,16 @@ func main() {
 
 		// Turn it into a blog post:
 		blogPost := &models.BlogPost{
-			Author:  "Ken",
+			Author:  defaultBlogAuthor,
 			Content: convertedDoc,
-			Icon:    "fa-anchor",
+			Icon:    defaultBlogIcon,
 			Time:    time.Now(),
 			Title:   docsResponse.Title,
+		}
+
+		// Parse the doc description to get the publishing metadata:
+		if err := blogPost.ParseDescription(doc.Description); err != nil {
+			log.Fatalf("Unable to parse description: %s", err.Error())
 		}
 
 		// Render the blog template:

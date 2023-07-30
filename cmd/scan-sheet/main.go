@@ -8,8 +8,9 @@ import (
 	"text/template"
 
 	flickrclient "github.com/chrusty/kens-models.github.io/internal/flickr-client"
+	sheetsClient "github.com/chrusty/kens-models.github.io/internal/google-clients/sheets"
 	"github.com/chrusty/kens-models.github.io/internal/models"
-	sheetsdata "github.com/chrusty/kens-models.github.io/internal/sheets-data"
+	sheetsData "github.com/chrusty/kens-models.github.io/internal/sheets-data"
 )
 
 const (
@@ -39,13 +40,13 @@ var (
 func main() {
 
 	// Make a new Google sheets client:
-	googleSheetsClient, err := sheetsdata.New(googleSpreadsheetId).WithAPIKey(googleAuthKey)
+	sheetsClient, err := sheetsClient.New().WithAPIKey(googleAuthKey)
 	if err != nil {
 		log.Fatalf("Unable to prepare a Google sheets client: %s", err.Error())
 	}
 
 	// Retrieve values from the Google sheet:
-	values, err := googleSheetsClient.ValuesGet("1:1000", true)
+	values, err := sheetsData.ValuesGet(sheetsClient, googleSpreadsheetId, "1:1000", true)
 	if err != nil {
 		log.Fatalf("Unable to retrieve Google sheets values: %s", err.Error())
 	}

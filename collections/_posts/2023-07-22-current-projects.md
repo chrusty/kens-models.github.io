@@ -3,7 +3,7 @@ layout: post
 title: Current projects
 author: Ken
 time: Saturday 22 of July 2023
-icon: fa-flickr
+icon: fa-list-check
 ---
 
 
@@ -16,7 +16,7 @@ I have 2 projects active and 3 others on-hold at the moment:
 
 
 
-\&lt;!--more--&gt;
+<!--more-->
 
 ## Hi Mold 1/700 HMS Devonshire (Active)
 

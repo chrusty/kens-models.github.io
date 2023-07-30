@@ -11,7 +11,7 @@ All of my extant completed models are now accessible on the site, with photos an
 
 
 
-\&lt;!--more--&gt;
+<!--more-->
 
 
 

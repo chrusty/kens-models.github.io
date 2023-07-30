@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"log"
 	"os"
+	"text/template"
 	"time"
 
 	docsClient "github.com/chrusty/kens-models.github.io/internal/google-clients/docs"
@@ -69,6 +69,8 @@ func main() {
 			Time:    time.Now(),
 			Title:   docsResponse.Title,
 		}
+
+		// fmt.Println(blogPost.RenderContent())
 
 		// Parse the doc description to get the publishing metadata:
 		if err := blogPost.ParseDescription(doc.Description); err != nil {

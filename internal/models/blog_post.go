@@ -2,6 +2,7 @@ package models
 
 import (
 	"fmt"
+	"html"
 	"strings"
 	"time"
 
@@ -30,4 +31,13 @@ func (b *BlogPost) TimeStamp() string {
 
 func (b *BlogPost) ParseDescription(description string) error {
 	return yaml.Unmarshal([]byte(description), b)
+}
+
+func (b *BlogPost) RenderContent() string {
+
+	// Remove leading "\" characters (added by the markdown converter for some reason):
+	stripped := strings.ReplaceAll(b.Content, "\n\\", "\n")
+
+	// Unescape the stripped content:
+	return html.UnescapeString(stripped)
 }

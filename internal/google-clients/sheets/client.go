@@ -1,4 +1,4 @@
-package sheetsdata
+package googlesheetsclient
 
 import (
 	"context"
@@ -10,17 +10,12 @@ import (
 	"google.golang.org/api/sheets/v4"
 )
 
-const (
-	sheetsAPIAddress = "https://www.googleapis.com/auth/spreadsheets"
-)
-
 type Client struct {
-	sheetsService *sheets.Service
-	spreadsheetId string
+	service *sheets.Service
 }
 
-func New(spreadsheetId string) *Client {
-	return &Client{spreadsheetId: spreadsheetId}
+func New() *Client {
+	return new(Client)
 }
 
 func (c *Client) WithAPIKey(apiKey string) (*Client, error) {
@@ -32,7 +27,7 @@ func (c *Client) WithAPIKey(apiKey string) (*Client, error) {
 	}
 
 	// Authenticate and get configuration:
-	config, err := google.JWTConfigFromJSON(credBytes, sheetsAPIAddress)
+	config, err := google.JWTConfigFromJSON(credBytes, sheets.SpreadsheetsReadonlyScope)
 	if err != nil {
 		return c, fmt.Errorf("Unable to get JWT config: %w", err)
 	}
@@ -40,14 +35,14 @@ func (c *Client) WithAPIKey(apiKey string) (*Client, error) {
 	// Prepare a spreadsheet service:
 	service, err := sheets.NewService(context.TODO(), option.WithHTTPClient(config.Client(context.TODO())))
 	if err != nil {
-		return c, fmt.Errorf("Unable to prepare sheets service: %w", err)
+		return c, fmt.Errorf("Unable to prepare service: %w", err)
 	}
 
-	c.sheetsService = service
+	c.service = service
 
 	return c, nil
 }
 
 func (c *Client) Service() *sheets.Service {
-	return c.sheetsService
+	return c.service
 }

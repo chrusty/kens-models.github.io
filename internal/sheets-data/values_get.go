@@ -1,9 +1,13 @@
 package sheetsdata
 
-func (c *Client) ValuesGet(selection string, header bool) (*Values, error) {
+import (
+	sheetsClient "github.com/chrusty/kens-models.github.io/internal/google-clients/sheets"
+)
+
+func ValuesGet(client *sheetsClient.Client, spreadsheetId string, selection string, header bool) (*Values, error) {
 
 	// Retrieve rows:
-	valuesGetResponse, err := c.sheetsService.Spreadsheets.Values.Get(c.spreadsheetId, selection).Do()
+	valuesGetResponse, err := client.Service().Spreadsheets.Values.Get(spreadsheetId, selection).Do()
 	if err != nil || valuesGetResponse.HTTPStatusCode != 200 {
 		return nil, err
 	}

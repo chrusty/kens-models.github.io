@@ -61,16 +61,20 @@ func main() {
 			log.Fatalf("Unable to convert document: %s", err.Error())
 		}
 
+		// Parse the creation date of the Google Drive file:
+		createdTimeStamp, err := time.Parse(time.RFC3339, doc.CreatedDate)
+		if err != nil {
+			log.Fatalf("Unable to parse CreatedDate from drive file: %s", err.Error())
+		}
+
 		// Turn it into a blog post:
 		blogPost := &models.BlogPost{
 			Author:  defaultBlogAuthor,
 			Content: convertedDoc,
 			Icon:    defaultBlogIcon,
-			Time:    time.Now(),
+			Time:    createdTimeStamp,
 			Title:   docsResponse.Title,
 		}
-
-		// fmt.Println(blogPost.RenderContent())
 
 		// Parse the doc description to get the publishing metadata:
 		if err := blogPost.ParseDescription(doc.Description); err != nil {

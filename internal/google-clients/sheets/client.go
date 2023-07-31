@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
+	"net/http"
 
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
@@ -11,6 +12,7 @@ import (
 )
 
 type Client struct {
+	http    *http.Client
 	service *sheets.Service
 }
 
@@ -38,9 +40,14 @@ func (c *Client) WithAPIKey(apiKey string) (*Client, error) {
 		return c, fmt.Errorf("Unable to prepare service: %w", err)
 	}
 
+	c.http = config.Client(context.TODO())
 	c.service = service
 
 	return c, nil
+}
+
+func (c *Client) HTTP() *http.Client {
+	return c.http
 }
 
 func (c *Client) Service() *sheets.Service {

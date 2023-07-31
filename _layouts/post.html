@@ -7,18 +7,18 @@
 
   {% include nav.html %}
 
-  <aside class="bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <br>
-                    <h2 class="section-heading">{{ page.title }}</h2>
-                    <hr class="primary">
-                    <p class="text-muted">{{ page.time }} ({{ page.author }})</p>
-                </div>
-            </div>
-        </div>
-  </aside>
+  <section style="background: url({{ site.dark_background_image }}) no-repeat center; background-size: cover;">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center bg-dark">
+                  <br>
+                  <h2 class="section-heading">{{ page.title }}</h2>
+                  <hr class="primary">
+                  <p class="text-muted">{{ page.time }} ({{ page.author }})</p>
+              </div>
+          </div>
+      </div>
+  </section>  
 
   <section id="content-wrapper" class="bg-secondary">
     <div class="container">

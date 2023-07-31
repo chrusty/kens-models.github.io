@@ -1,6 +1,7 @@
 title: Ken's Models
 flickr_username: kens_models
 collections_dir: collections
+dark_background_image: /img/background-militaryvehicles.jpg
 
 collections:
   aircraft:

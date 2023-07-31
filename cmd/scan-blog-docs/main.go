@@ -15,7 +15,7 @@ import (
 
 const (
 	defaultBlogAuthor = "Ken"
-	defaultBlogIcon   = "fa-anchor"
+	defaultBlogIcon   = "fa-clock"
 	jekyllPostsPath   = "./collections/_posts"
 	templateFileName  = "blog.tmpl"
 	templatePath      = "./internal/templates/"

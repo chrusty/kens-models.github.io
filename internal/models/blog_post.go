@@ -38,6 +38,9 @@ func (b *BlogPost) RenderContent() string {
 	// Remove leading "\" characters (added by the markdown converter for some reason):
 	stripped := strings.ReplaceAll(b.Content, "\n\\", "\n")
 
+	// Add a slash to image paths:
+	stripped = strings.ReplaceAll(stripped, "img/blog", "/img/blog")
+
 	// Unescape the stripped content:
 	return html.UnescapeString(stripped)
 }

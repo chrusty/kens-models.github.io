@@ -11,14 +11,16 @@ import (
 	driveClient "github.com/chrusty/kens-models.github.io/internal/google-clients/drive"
 	"github.com/chrusty/kens-models.github.io/internal/models"
 	"github.com/erikh/gdocs-export/pkg/converters"
+	"github.com/erikh/gdocs-export/pkg/util"
 )
 
 const (
-	defaultBlogAuthor = "Ken"
-	defaultBlogIcon   = "fa-clock"
-	jekyllPostsPath   = "./collections/_posts"
-	templateFileName  = "blog.tmpl"
-	templatePath      = "./internal/templates/"
+	defaultBlogAuthor   = "Ken"
+	defaultBlogIcon     = "fa-clock"
+	downloadedImagePath = "img/blog"
+	jekyllPostsPath     = "./collections/_posts"
+	templateFileName    = "blog.tmpl"
+	templatePath        = "./internal/templates/"
 )
 
 var (
@@ -55,8 +57,14 @@ func main() {
 			log.Fatalf("Unable to retrieve doc: %s", err.Error())
 		}
 
+		// Download the assets:
+		manifest, err := util.DownloadAssets(docsClient.HTTP(), docsResponse, downloadedImagePath, true)
+		if err != nil {
+			log.Fatalf("Unable to download assets")
+		}
+
 		// Convert to markdown:
-		convertedDoc, err := converters.Convert("md", docsResponse, nil)
+		convertedDoc, err := converters.Convert("md", docsResponse, manifest)
 		if err != nil {
 			log.Fatalf("Unable to convert document: %s", err.Error())
 		}

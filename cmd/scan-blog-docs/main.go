@@ -15,11 +15,12 @@ import (
 )
 
 const (
-	defaultBlogAuthor = "Ken"
-	defaultBlogIcon   = "fa-clock"
-	jekyllPostsPath   = "./collections/_posts"
-	templateFileName  = "blog.tmpl"
-	templatePath      = "./internal/templates/"
+	defaultBlogAuthor   = "Ken"
+	defaultBlogIcon     = "fa-clock"
+	downloadedImagePath = "img/blog"
+	jekyllPostsPath     = "./collections/_posts"
+	templateFileName    = "blog.tmpl"
+	templatePath        = "./internal/templates/"
 )
 
 var (
@@ -57,7 +58,7 @@ func main() {
 		}
 
 		// Download the assets:
-		manifest, err := util.DownloadAssets(docsClient.HTTP(), docsResponse, "img/blog", true)
+		manifest, err := util.DownloadAssets(docsClient.HTTP(), docsResponse, downloadedImagePath, true)
 		if err != nil {
 			log.Fatalf("Unable to download assets")
 		}

@@ -7,15 +7,11 @@ icon: fa-list-check
 ---
 
 
-36 new photos added for recent models
-
-
-
-<!--more→
-
-
-
 I have posted a new series of photos of four of my recent 2023-24 models; F2H-2P Banshee, British Quad gun tractor with 25-pdr gun, Soviet SU-57B tank destroyer and County Class missile destroyer HMS Devonshire.
+
+
+
+<!--more-->
 
 
 
